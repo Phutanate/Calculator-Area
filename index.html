@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <section class ="navBar">
+        <div class="logo">
+            <img src="/Image/shape_icon.png">
+            <h3>Calculate Area</h3>
+        </div>
+    </section>
+
+    <section class="screen">
+        <div class="screen-value">
+            <h1 id="Value">Value</h1>
+        </div>
+    </section>
+
+    <main class="btn-data">
+        <div class="ShapeBox">
+            <p class="title-input">Input Side " X " (cm)</p>
+            <input id="inputValue-X" type="text">
+            <p class="title-input">Input Side " Y " (cm)</p>
+            <input id="inputValue-Y" type="text">
+            <button class="shape" id="square_shape"><img src="/Image/square_icon.png"> SQUARE</button>
+        </div>
+        <div class="ShapeBox">
+            <p class="title-input">Input " Radius " (cm)</p>
+            <input id="inputValue-R" type="text">
+            <button class="shape" id="circle_shape"><img src="/Image/circle_icon.png"> CIRCLE</button>
+        </div>
+        <div class="ShapeBox">
+            <p class="title-input">Input " Height " (cm)</p>
+            <input id="inputValue-H" type="text">
+            <p class="title-input">Input " Base " (cm)</p>
+            <input id="inputValue-B" type="text">
+            <button class="shape" id="triangle_shape"><img src="/Image/triangle_icon.png"> TRIANGLE</button>
+        </div>
+
+    </main>
+    <script src="/JS/script.js"></script>
+</body>
+</html>

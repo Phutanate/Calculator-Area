@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(21, 17, 37);
+}
+
+.navBar{
+    display: flex;
+    background-color: rgb(41, 31, 90);
+    color: #fff;
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.screen{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+}
+
+.screen-value{
+    display: flex;
+    width: 50%;
+    height: 80%;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: auto;
+    background-color: #000;
+    color: #fff;
+    border: 5px dashed rgb(43, 251, 213);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: grid;
+    height: 100%;
+    margin: 10px;
+    grid-template-columns: auto 20% 80px 20% 80px 20% auto;
+    /* border: 3px solid red;  */
+}
+
+
+.ShapeBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ShapeBox:nth-child(1){
+    grid-column: 2;
+}
+.ShapeBox:nth-child(2){
+    grid-column: 4;
+}
+.ShapeBox:nth-child(3){
+    grid-column: 6;
+}
+
+.title-input{
+    color: #fff;
+}
+
+input{
+    font-size: 1.3rem;
+    text-align: center;
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    border: 2px dashed rgb(43, 251, 213);
+    border-radius: 10px;
+}
+
+button{
+    padding: 20px 50px;
+    font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    margin: 20px;
+    transition: all 0.25s ease;
+}
+
+.shape{
+    color: #000;
+    margin-bottom: 0;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5) ,
+    0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+}
+.shape:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.5) ,
+    -10px 10px 25px 0px rgba(39, 200, 255, 0.5);
+}
+.shape:hover::after {
+    transform: rotate(150deg);
+}
+.shape::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #27d86c 0% ,
+    #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
